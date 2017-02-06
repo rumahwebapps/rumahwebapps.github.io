@@ -1,0 +1,95 @@
+@import "colors"
+@import "fonts.sass"
+
+body
+  background-color: $yellow
+  margin: 0
+
+.head
+  font-family: 'Rubik', sans-serif
+  header
+    margin: 0 auto
+    text-align: center
+    width: 50%
+    max-width: 370px
+    border: 7px solid black
+    margin-bottom: 50px
+    margin-top: 30px
+    border-radius: 20px
+    a
+      text-decoration: none
+      color: black
+    h1
+      background-color: $blue
+      font-size: 3em
+      background-color: $brown
+      margin: 0
+      border-radius: 13px
+  nav
+    background-color: $blue
+    ul
+      margin: 0 6%
+      text-align: center
+      padding-left: 0
+      @media (max-width: 750px)
+        margin: 0
+      a
+        font-size: 2em
+        padding: 0 5%
+        text-decoration: none
+        color: black
+        text-transform: capitalize
+        transition: all 0.3s
+        &:last-child
+          padding-right: 2%
+          margin-right: -5%
+        &:first-child
+          padding-right: 8%
+          margin-left: -5%
+        &:hover
+          background-color: $yellow
+          color: $brown
+        @media (max-width: 750px)
+          display: block
+          &:last-child
+            padding: 0
+            margin: 0
+          &:first-child
+            padding: 0
+            margin: 0
+
+
+.container
+  padding-top: 50px
+  margin: 0 13%
+  transition: all 0.2s
+  @media (max-width: 750px)
+    margin: 10%
+  section
+    padding: 20px 0
+    h1
+      font-family: 'Rubik', sans-serif
+      font-size: 2.5em
+      margin-bottom: 20px
+    h3
+      font-family: 'Nunito', sans-serif
+      font-weight: 700
+      font-size: 2em
+    p, ul
+      font-family: 'Nunito', sans-serif
+      font-weight: 400
+      font-size: 1.3em
+    ul
+      padding-bottom: 10px
+      li
+        padding-bottom: 10px
+    hr
+      height: 5px
+      background-color: $blue
+      border-radius: 10px
+      margin-top: -10px
+      border-style: none
+
+footer
+  font-family: monospace, sans-serif
+  margin: 0 30px
