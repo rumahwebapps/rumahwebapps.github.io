@@ -1,6 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,700|Rubik:500);body {
   background-color: #fff651;
   margin: 0; }
+  @media (max-width: 550px) {
+    body {
+      font-size: 0.8em; } }
+  @media (max-width: 400px) {
+    body .head {
+      font-size: 1em; }
+    body .container section h3 {
+      font-size: 1.5em; }
+    body .container section h1 {
+      font-size: 2em; }
+    body .container section {
+      font-size: 80%; } }
 
 .head {
   font-family: 'Rubik', sans-serif; }
